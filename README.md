@@ -239,6 +239,12 @@ STAGE 6: FINAL DECISION
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
+
+## WorkFlow Cycle
+
+<img width="660" height="585" alt="image" src="https://github.com/user-attachments/assets/249cf245-39bb-47eb-82ed-c29df677bfb2" />
+
+
 ---
 
 ## 📁 Project Structure
