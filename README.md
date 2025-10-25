@@ -101,7 +101,7 @@ Generate optimized content with our intelligent AI agents:
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture 
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -251,6 +251,10 @@ User Upload Video
 ```
 
 ---
+## Architechture And Workflow Visual Implementation
+
+<img width="786" height="564" alt="image" src="https://github.com/user-attachments/assets/d7f96f94-c5fb-4941-ab2c-6f18c6ca37fa" />
+
 
 ## 🚀 Getting Started
 
