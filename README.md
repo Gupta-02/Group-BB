@@ -539,8 +539,7 @@ FRONTEND_PORT=8080
 4. Use this password (not your regular password)
 
 **MongoDB Connection**:
-- Local: `mongodb://localhost:27017/recruiter_db`
-- Atlas Cloud: `mongodb+srv://username:password@cluster.mongodb.net/recruiter_db`
+
 
 ---
 
