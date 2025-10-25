@@ -1,599 +1,692 @@
-# 🎬 YouPac AI - YouTube Content Creation Assistant
+# 🚀 HireFlow – Intelligent AI-Powered Hiring Platform
 
-<div align="center">
+> **Revolutionizing recruitment through GenAI automation and intelligent candidate assessment**
 
-[![React Router](https://img.shields.io/badge/React%20Router-v7-61DAFB?logo=react&logoColor=white)](https://reactrouter.com)
-[![Convex](https://img.shields.io/badge/Convex-Real%20Time-6B5B95)](https://www.convex.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
-
-**Transform Your YouTube Workflow with AI-Powered Content Generation**
-
-Generate SEO-optimized titles, comprehensive descriptions, stunning thumbnails, and viral-ready social media posts in minutes.
-
-[🚀 Get Started](#getting-started) • [📖 Documentation](#documentation) • [🏗️ Architecture](#architecture) • [🤝 Contributing](#contributing)
-
-</div>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made with React](https://img.shields.io/badge/Frontend-React+TypeScript-blue?logo=react)](https://reactjs.org/)
+[![Node.js Backend](https://img.shields.io/badge/Backend-Node.js+Express-green?logo=node.js)](https://nodejs.org/)
+[![AI Powered](https://img.shields.io/badge/AI-Google%20Gemini-orange?logo=google)](https://ai.google.dev/)
+[![Database](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)
 
 ---
 
 ## 📋 Abstract
 
-**YouPac AI** is a cutting-edge, AI-powered platform designed to revolutionize YouTube content creation. By leveraging advanced artificial intelligence, real-time collaboration features, and modern web technologies, YouPac AI empowers creators to automate the most time-consuming aspects of content marketing—from title optimization to thumbnail generation.
+**HireFlow** is a next-generation recruitment platform that harnesses the power of generative AI to streamline and accelerate the hiring process. Designed for modern HR professionals, recruiters, and organizations of all sizes, HireFlow automates critical hiring workflows—from job posting creation to candidate evaluation, interview scheduling, and AI-powered assessments.
 
-Built on **React Router v7** for full-stack capabilities, **Convex** for real-time database synchronization, and **OpenAI** for intelligent content generation, YouPac AI combines a beautiful, intuitive user interface with powerful backend processing. Upload your video once, and let our AI agents work their magic to generate multiple variations of titles, descriptions, and social media content tailored to your channel's unique voice and audience.
+The platform leverages **Google Gemini AI** to intelligently evaluate resumes, generate interview questions, assess candidate responses, and facilitate coding assessments. By combining a responsive React frontend with a robust Node.js/Python backend, HireFlow delivers a seamless experience that reduces hiring cycles from weeks to days while ensuring data-driven hiring decisions.
 
-With drag-and-drop workflow canvas, smart AI chat integration, and collaborative sharing features, YouPac AI reduces content creation time from hours to minutes while maintaining professional quality across all platforms.
-
----
-
-## ✨ Core Features
-
-### 🎯 Video Upload & Processing
-- Upload videos up to **1GB** with automatic transcription
-- AI-powered video analysis and metadata extraction
-- Support for multiple video formats
-
-### 🤖 AI Content Generation
-Generate optimized content with our intelligent AI agents:
-- **📝 Title Agent** - Catchy, SEO-optimized video titles
-- **📄 Description Agent** - Comprehensive, engaging descriptions
-- **🖼️ Thumbnail Agent** - Visual concepts powered by DALL-E 3
-- **🐦 Social Media Agent** - Twitter/X threads for promotion
-
-### 🎨 Interactive Canvas
-- Drag-and-drop visual workflow interface
-- Real-time node connections and validation
-- Auto-save every 5 seconds
-- Visual content management
-
-### 💬 Smart Chat Integration
-- Chat with specific AI agents using @mentions
-- Request modifications and regenerations
-- Context-aware AI responses based on your video
-
-### 👁️ Content Preview
-- Live YouTube-style preview
-- Twitter/X thread preview
-- What-you-see-is-what-you-get editing
-
-### 🔗 Collaboration
-- Share read-only canvas views with team members
-- Real-time synchronization
-- Access control management
-
-### 🔐 Advanced Security
-- Secure authentication with Clerk
-- Role-based access control
-- Data encryption in transit and at rest
+**Key Innovation**: An intelligent pipeline that automatically scores candidates, conducts AI-powered Q&A interviews, evaluates coding submissions, and provides actionable hiring recommendations—all without manual intervention.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features
 
-### Frontend
-| Technology | Purpose |
-|-----------|---------|
-| **React Router v7** | Full-stack React framework with SSR |
-| **React Flow** | Interactive canvas for visual workflows |
-| **TailwindCSS v4** | Utility-first CSS framework |
-| **shadcn/ui** | Modern component library with Radix UI |
-| **Lucide React** | Beautiful icon library |
-| **Sonner** | Toast notifications |
-
-### Backend & Services
-| Technology | Purpose |
-|-----------|---------|
-| **Convex** | Real-time database & serverless functions |
-| **Clerk** | Authentication & user management |
-| **OpenAI** | GPT-4 & DALL-E 3 integration |
-| **ElevenLabs** | Speech-to-text transcription |
-| **FFmpeg** | Video processing & audio extraction |
-
-### DevOps & Deployment
-| Technology | Purpose |
-|-----------|---------|
-| **Vite** | Lightning-fast build tool |
-| **TypeScript** | End-to-end type safety |
-| **Vercel** | Deployment platform |
-| **Docker** | Containerization |
+🎯 **AI-Powered Candidate Scoring** - Automatic resume evaluation and candidate ranking  
+🗣️ **Intelligent Interview Agent** - AI-driven Q&A and technical assessments  
+📧 **Automated Workflows** - Email notifications, interview invitations, and status updates  
+💻 **Coding Assessment** - Real-time code evaluation with AI feedback  
+📊 **HR Dashboard** - Comprehensive metrics and candidate pipeline visualization  
+🔐 **Secure Resume Handling** - PDF parsing and encrypted data storage  
+⚡ **Real-time Updates** - WebSocket-ready architecture for live notifications  
+🎨 **Modern UI** - Responsive design with Shadcn UI components  
 
 ---
 
-## 🏗️ Architecture 
+## 🏗️ System Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                          CLIENT LAYER (Browser)                         │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐      │
-│  │  Homepage/Auth   │  │   Dashboard      │  │  Canvas Editor   │      │
-│  │                  │  │  - Projects      │  │  - Visual Flow   │      │
-│  │  - Landing Page  │  │  - Settings      │  │  - Chat Panel    │      │
-│  │  - Sign In/Up    │  │  - Profile       │  │  - Preview Pane  │      │
-│  └────────┬─────────┘  └────────┬─────────┘  └────────┬─────────┘      │
-│           │                     │                     │                 │
-│           └─────────────────────┴─────────────────────┘                 │
-│                          ▼                                               │
-│           ┌────────────────────────────────────┐                        │
-│           │    React Router v7 (Full-Stack)    │                        │
-│           │  - Client-side Routing             │                        │
-│           │  - Server-side Rendering (SSR)     │                        │
-│           │  - API Route Handlers              │                        │
-│           └────────────┬───────────────────────┘                        │
-│                        │                                                 │
-└────────────────────────┼─────────────────────────────────────────────────┘
-                         │
-                         ▼
-    ┌────────────────────────────────────────────────────────┐
-    │         AUTHENTICATION LAYER                            │
-    ├────────────────────────────────────────────────────────┤
-    │                                                          │
-    │  ┌──────────────────────────────────────────────────┐  │
-    │  │         Clerk Authentication                     │  │
-    │  │  - User Management & Sessions                    │  │
-    │  │  - JWT Token Generation                          │  │
-    │  │  - Role-Based Access Control                     │  │
-    │  └──────────────────────────────────────────────────┘  │
-    │                                                          │
-    └────────────────────┬─────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    REAL-TIME DATA LAYER (Convex)                        │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  ┌────────────────────┐  ┌─────────────────┐  ┌──────────────────┐    │
-│  │   Projects DB      │  │   Videos DB     │  │  Canvas DB       │    │
-│  │  - Project Meta    │  │  - Video Info   │  │  - Nodes         │    │
-│  │  - Ownership       │  │  - Status       │  │  - Edges         │    │
-│  │  - Timestamps      │  │  - URLs         │  │  - Layout        │    │
-│  └────────┬───────────┘  └────────┬────────┘  └────────┬─────────┘    │
-│           │                       │                    │               │
-│           └───────────────────────┼────────────────────┘               │
-│                                   ▼                                     │
-│           ┌──────────────────────────────────────┐                     │
-│           │   WebSocket Real-time Sync          │                     │
-│           │  - Live Collaboration               │                     │
-│           │  - Auto-save Every 5s               │                     │
-│           │  - Instant Updates Across Clients   │                     │
-│           └────────────┬─────────────────────────┘                     │
-│                        │                                                │
-└────────────────────────┼─────────────────────────────────────────────────┘
-                         │
-                         ▼
-    ┌────────────────────────────────────────────────────────┐
-    │         SERVERLESS BACKEND (Convex Functions)          │
-    ├────────────────────────────────────────────────────────┤
-    │                                                          │
-    │  ┌──────────────────────────────────────────────────┐  │
-    │  │      Video Processing Pipeline                   │  │
-    │  │  - Upload Handler                               │  │
-    │  │  - Audio Extraction (FFmpeg)                    │  │
-    │  │  - Metadata Extraction                          │  │
-    │  └──────────────────────────────────────────────────┘  │
-    │                                                          │
-    │  ┌──────────────────────────────────────────────────┐  │
-    │  │      Transcription Service                       │  │
-    │  │  - ElevenLabs Integration                       │  │
-    │  │  - Text Processing & Chunking                   │  │
-    │  │  - Storage in Convex DB                         │  │
-    │  └──────────────────────────────────────────────────┘  │
-    │                                                          │
-    │  ┌──────────────────────────────────────────────────┐  │
-    │  │      AI Agent Orchestration                      │  │
-    │  │  - Distribute tasks to AI engines                │  │
-    │  │  - Manage agent queue & workflows                │  │
-    │  │  - Handle regeneration requests                  │  │
-    │  └──────────────────────────────────────────────────┘  │
-    │                                                          │
-    │  ┌──────────────────────────────────────────────────┐  │
-    │  │      Content Management                          │  │
-    │  │  - Canvas CRUD operations                        │  │
-    │  │  - Share token generation                        │  │
-    │  │  - Export functionality                          │  │
-    │  └──────────────────────────────────────────────────┘  │
-    │                                                          │
-    └────────────────────┬─────────────────────────────────────┘
-                         │
-         ┌───────────────┼───────────────┐
-         ▼               ▼               ▼
-    ┌─────────┐    ┌──────────┐    ┌─────────┐
-    │ OpenAI  │    │  DALL-E  │    │Eleven   │
-    │ GPT-4   │    │   v3     │    │ Labs    │
-    │         │    │          │    │         │
-    │• Title  │    │• Thumbs  │    │• Speech │
-    │• Desc   │    │• Concepts│    │  to     │
-    │• Social │    │• Images  │    │  Text   │
-    └─────────┘    └──────────┘    └─────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                     HIREFLOW ECOSYSTEM                          │
+└─────────────────────────────────────────────────────────────────┘
 
-                    ▲
-                    │
-        ┌───────────┴───────────┐
-        ▼                       ▼
-    ┌──────────┐          ┌──────────┐
-    │ Storage  │          │ Analytics│
-    │          │          │          │
-    │• Vectors │          │• Logging │
-    │• Videos  │          │• Metrics │
-    │• Assets  │          │• Errors  │
-    └──────────┘          └──────────┘
-
+                    ┌──────────────────────┐
+                    │   CLIENT LAYER       │
+                    │  (React + TypeScript)│
+                    │  - HR Dashboard      │
+                    │  - Candidate Portal  │
+                    │  - Interview Module  │
+                    └──────────┬───────────┘
+                               │
+                    ┌──────────▼───────────┐
+                    │  API GATEWAY / CORS  │
+                    └──────────┬───────────┘
+                               │
+            ┌──────────────────┼──────────────────┐
+            │                  │                  │
+    ┌───────▼────────┐  ┌──────▼────────┐  ┌─────▼──────────┐
+    │  NODE.JS API   │  │  PYTHON       │  │  EXTERNAL      │
+    │  (Express.js)  │  │  MICROSERVICE │  │  SERVICES      │
+    │                │  │  (Flask)      │  │                │
+    │ ✓ Job Routes   │  │               │  │ • Google       │
+    │ ✓ Application  │  │ ✓ Job         │  │   Gemini API   │
+    │   Management   │  │   Processing  │  │ • Gmail SMTP   │
+    │ ✓ Interview    │  │ ✓ AI          │  │ • MongoDB      │
+    │   Pipeline     │  │   Evaluation  │  │                │
+    │ ✓ File Upload  │  │               │  │                │
+    └───────┬────────┘  └──────┬────────┘  └─────────────────┘
+            │                  │
+            └──────────────────┼─────────────────┐
+                               │                 │
+                    ┌──────────▼──────────┐      │
+                    │   MONGODB           │      │
+                    │   DATABASE          │      │
+                    │                     │      │
+                    │ Collections:        │      │
+                    │ • Jobs              │      │
+                    │ • Applications      │      │
+                    │ • Interviews        │      │
+                    │ • Responses         │      │
+                    └─────────────────────┘      │
+                                                 │
+                                    ┌────────────▼──────┐
+                                    │  NOTIFICATION     │
+                                    │  SERVICE          │
+                                    │  (Email/SMS)      │
+                                    └───────────────────┘
 ```
 
 ---
 
-## 📊 Data Flow
+## 🔄 Workflow & Process Flow
 
 ```
-User Upload Video
-    │
-    ├─→ [Validation] → File size, format check
-    │
-    ├─→ [Extraction] → Audio extraction (FFmpeg)
-    │
-    ├─→ [Transcription] → ElevenLabs API → Store in Convex DB
-    │
-    ├─→ [Analysis] → Extract metadata (duration, resolution, etc.)
-    │
-    ├─→ [AI Generation] → Dispatch to AI Agents
-    │   │
-    │   ├─→ Title Agent (GPT-4) → Generate titles
-    │   ├─→ Description Agent (GPT-4) → Generate descriptions
-    │   ├─→ Thumbnail Agent (DALL-E 3) → Generate images
-    │   └─→ Social Agent (GPT-4) → Generate tweets
-    │
-    ├─→ [Canvas Creation] → Create visual workflow
-    │
-    └─→ [User Review] → Chat refinement → Export/Share
+┌──────────────────────────────────────────────────────────────────────────┐
+│                    RECRUITMENT WORKFLOW                                  │
+└──────────────────────────────────────────────────────────────────────────┘
+
+STAGE 1: JOB POSTING
+────────────────────
+    HR Admin
+       │
+       ├─→ Log in to HR Dashboard
+       │
+       ├─→ Fill Job Form
+       │   • Title, Description
+       │   • Requirements, Salary
+       │   • Location, Job Type
+       │
+       ├─→ Submit Job Posting
+       │
+       └─→ Job Published ✓
+           (Available on Candidate Portal)
+
+
+STAGE 2: CANDIDATE APPLICATION
+───────────────────────────────
+    Candidate
+       │
+       ├─→ Browse Job Listings
+       │
+       ├─→ Click "Apply Now"
+       │
+       ├─→ Fill Application Form
+       │   • Personal Info (Name, Email, Phone)
+       │   • Cover Letter
+       │   • Resume Upload (PDF)
+       │
+       ├─→ System: PDF → Text Extraction
+       │
+       └─→ Application Submitted ✓
+
+
+STAGE 3: AI EVALUATION
+──────────────────────
+    Backend System
+       │
+       ├─→ Parse Resume (PDF → Text)
+       │
+       ├─→ Call Google Gemini API
+       │   • Analyze Resume Content
+       │   • Extract Key Skills
+       │   • Match with Job Requirements
+       │
+       ├─→ Generate AI Score (0-100)
+       │   Based on:
+       │   • Skill Match
+       │   • Experience Level
+       │   • Education Background
+       │   • Relevance to Role
+       │
+       ├─→ Store Application + Score in MongoDB
+       │
+       └─→ Evaluation Complete ✓
+
+
+STAGE 4: INTERVIEW SCHEDULING
+──────────────────────────────
+    HR Admin
+       │
+       ├─→ View Candidate Scores
+       │   (in HR Dashboard)
+       │
+       ├─→ Select Top Candidates
+       │
+       ├─→ Click "Send Interview Invite"
+       │
+       ├─→ System Sends Email
+       │   • Interview Details
+       │   • Calendar Link
+       │   • Instructions
+       │
+       ├─→ Update Status: "invited" ✓
+       │
+       └─→ Candidate Receives Email
+
+
+STAGE 5: AI INTERVIEW ASSESSMENT
+─────────────────────────────────
+    Candidate
+       │
+       ├─→ Click Interview Link
+       │
+       ├─→ Start Interview Module
+       │
+       │   ┌─ Q&A ASSESSMENT ──────────┐
+       │   │ • AI generates 5-7         │
+       │   │   behavioral questions     │
+       │   │ • Candidate answers each   │
+       │   │ • AI scores responses      │
+       │   │ • Real-time feedback       │
+       │   └────────────────────────────┘
+       │
+       │   ┌─ CODING ASSESSMENT ───────┐
+       │   │ • Programming challenge    │
+       │   │ • Code editor (Ace.js)     │
+       │   │ • Multiple language support│
+       │   │ • AI evaluates solution    │
+       │   │ • Provides detailed review │
+       │   └────────────────────────────┘
+       │
+       │   ┌─ EVALUATION SUMMARY ──────┐
+       │   │ • Overall Interview Score  │
+       │   │ • Question-wise Analysis   │
+       │   │ • Coding Assessment Result │
+       │   │ • Strengths & Weaknesses   │
+       │   └────────────────────────────┘
+       │
+       └─→ Interview Completed ✓
+
+
+STAGE 6: FINAL DECISION
+───────────────────────
+    HR Admin
+       │
+       ├─→ Review Interview Results
+       │
+       ├─→ Analyze Combined Scores
+       │   • Resume Score (Stage 3)
+       │   • Interview Score (Stage 5)
+       │   • Coding Score (if applicable)
+       │
+       ├─→ Make Hiring Decision
+       │   • Accept / Reject / Hold
+       │   • Add Decision Notes
+       │
+       ├─→ Send Final Email
+       │   • Outcome Notification
+       │   • Next Steps
+       │   • HR Contact Info
+       │
+       ├─→ Update Status: "completed" ✓
+       │
+       └─→ Candidate Notified
+
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│  TIMELINE: Job Posted → Candidate Applied → AI Scored → Interviewed     │
+│            → Evaluated → Hired (Avg. 3-5 days vs. 3-4 weeks manually)    │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
-## Architechture And Workflow Visual Implementation
 
-<img width="786" height="564" alt="image" src="https://github.com/user-attachments/assets/d7f96f94-c5fb-4941-ab2c-6f18c6ca37fa" />
+## 📁 Project Structure
 
+```
+hireflow/
+├── 📦 backend-hiring-AI/
+│   ├── index.js                    # Express.js main server
+│   ├── jobpostingserver.py         # Flask microservice
+│   ├── package.json                # Node dependencies
+│   ├── env                         # Environment variables
+│   └── env-1                       # Backup env config
+│
+├── 🎨 Frontend/
+│   ├── 📂 src/
+│   │   ├── 📄 App.tsx              # Main app component with routing
+│   │   ├── 📄 main.tsx             # React entry point
+│   │   ├── 📄 index.css            # Global styles
+│   │   ├── 📂 components/
+│   │   │   ├── 📄 JobForm.tsx      # Job creation form
+│   │   │   └── 📂 ui/              # Shadcn UI components (20+ components)
+│   │   ├── 📂 pages/
+│   │   │   ├── 📄 Home.tsx         # Landing page
+│   │   │   ├── 📄 HRDashboard.tsx  # HR management dashboard
+│   │   │   ├── 📄 ApplyJob.tsx     # Job application page
+│   │   │   ├── 📄 Interview.tsx    # AI interview module
+│   │   │   ├── 📄 ViewCandidates.tsx  # Candidate list
+│   │   │   ├── 📄 CandidatePortal.tsx # Candidate portal
+│   │   │   ├── 📄 Support.tsx      # Support page
+│   │   │   └── 📄 NotFound.tsx     # 404 page
+│   │   ├── 📂 hooks/
+│   │   │   ├── 📄 use-toast.ts     # Toast notifications
+│   │   │   └── 📄 use-mobile.tsx   # Responsive design
+│   │   └── 📂 lib/
+│   │       └── 📄 utils.ts         # Utility functions
+│   │
+│   ├── vite.config.ts              # Vite configuration
+│   ├── tailwind.config.ts          # Tailwind CSS config
+│   ├── tsconfig.json               # TypeScript config
+│   ├── package.json                # React dependencies
+│   └── index.html                  # HTML entry point
+│
+├── 📄 README.md                    # This file
+└── 📄 hacktoday.code-workspace     # VS Code workspace
+```
 
-## 🚀 Getting Started
+---
+
+## 🛠️ Technology Stack
+
+### **Frontend**
+- ⚛️ **React 18** - UI library with hooks
+- 🎯 **TypeScript** - Type-safe development
+- ⚡ **Vite** - Lightning-fast build tool & dev server
+- 🎨 **Tailwind CSS** - Utility-first CSS framework
+- 🧩 **Shadcn UI** - Beautiful, accessible component library
+- 🪝 **React Router** - Client-side routing
+- 📡 **TanStack Query** - Server state management
+- 💬 **React Hook Form** - Efficient form handling
+- ✏️ **Ace Editor** - Code editing (for coding assessments)
+
+### **Backend**
+- 🟢 **Node.js + Express.js** - HTTP API server
+- 🐍 **Python + Flask** - AI processing microservice
+- 📦 **MongoDB** - NoSQL document database
+- 🤖 **Google Generative AI (Gemini 1.5 Flash)** - AI model for evaluations
+- 📧 **Nodemailer** - Email sending service
+- 📑 **pdf-parse** - PDF text extraction
+- 🔐 **CORS** - Cross-origin resource sharing
+- 📤 **Multer** - File upload handling
+- 🔑 **UUID** - Unique identifier generation
+- 🔐 **Dotenv** - Environment variable management
+
+### **Deployment & DevOps**
+- 🐳 **Docker** - Containerization (optional)
+- 🗄️ **MongoDB Atlas** - Cloud database
+- ☁️ **Vercel/Netlify** - Frontend hosting
+- ☁️ **Render/Railway** - Backend hosting
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
+- **Node.js** (v16 or higher)
+- **Python** (v3.8 or higher)
+- **MongoDB** (local or Atlas cloud instance)
+- **Google Gemini API Key** (free tier available)
+- **Gmail Account** (for email notifications)
 
-Before you begin, ensure you have:
-- **Node.js** 18+ installed
-- **npm** or **yarn** package manager
-- Git for version control
+### 1. Clone the Repository
 
-### Required Accounts
-
-- [Clerk](https://clerk.com) - Authentication
-- [Convex](https://www.convex.dev) - Database
-- [OpenAI](https://platform.openai.com) - API access
-- [ElevenLabs](https://elevenlabs.io) - Transcription API
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/youpac-ai.git
-   cd youpac-ai
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**
-   ```bash
-   cp .env.example .env.local
-   ```
-
-4. **Set up your `.env.local`**
-   ```env
-   # Convex Configuration
-   CONVEX_DEPLOYMENT=your_convex_deployment_here
-   VITE_CONVEX_URL=your_convex_url_here
-
-   # Clerk Authentication
-   VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
-   CLERK_SECRET_KEY=your_clerk_secret_key_here
-
-   # OpenAI Configuration
-   OPENAI_API_KEY=your_openai_api_key_here
-
-   # ElevenLabs Configuration
-   ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
-
-   # Frontend URL
-   FRONTEND_URL=http://localhost:5173
-   ```
-
-5. **Initialize Convex**
-   ```bash
-   npx convex dev
-   ```
-
-6. **Set Convex environment variables**
-   - Go to your Convex dashboard
-   - Add these secrets:
-     - `OPENAI_API_KEY`
-     - `ELEVENLABS_API_KEY`
-
-### Development
-
-Start the development server with hot module replacement:
 ```bash
+git clone https://github.com/shravankumar8/hireflow.git
+cd hireflow
+```
+
+### 2. Backend Setup
+
+```bash
+cd backend-hiring-AI
+
+# Install Node dependencies
+npm install
+
+# Create .env file
+cp env .env
+
+# Add your credentials
+echo "GEMINI_API_KEY=your_gemini_api_key_here" >> .env
+echo "EMAIL_USER=your_gmail@gmail.com" >> .env
+echo "EMAIL_PASS=your_app_password_here" >> .env
+echo "MONGO_URI=mongodb://localhost:27017/recruiter_db" >> .env
+
+# Install Python dependencies
+pip install flask pymongo
+
+# Start backend servers
+node index.js          # Terminal 1
+python jobpostingserver.py  # Terminal 2
+```
+
+### 3. Frontend Setup
+
+```bash
+cd Frontend
+
+# Install React dependencies
+npm install
+
+# Create .env file (if needed)
+echo "VITE_API_URL=http://localhost:5000" >> .env
+
+# Start development server
 npm run dev
 ```
 
-Your application will be available at **http://localhost:5173**
+### 4. Access the Application
 
-### Building for Production
+- 🏠 **Home**: http://localhost:8080
+- 👨‍💼 **HR Dashboard**: http://localhost:8080/hr
+- 👤 **Candidate Portal**: http://localhost:8080/candidates
+- 💼 **Job Application**: http://localhost:8080/apply/:jobId
+- 🎤 **Interview Module**: http://localhost:8080/interview/:candidateId/:jobId
 
-Create an optimized production build:
-```bash
-npm run build
+---
+
+## 📚 API Documentation
+
+### **Job Management**
+
+#### Create Job
+```http
+POST /jobs
+Content-Type: application/json
+
+{
+  "title": "Senior React Developer",
+  "company": "TechCorp",
+  "location": "San Francisco, CA",
+  "type": "full-time",
+  "salary": "$120,000 - $150,000",
+  "description": "...",
+  "requirements": "..."
+}
+
+Response: { "jobId": "uuid", "status": "created" }
 ```
 
-Start the production server:
-```bash
-npm run start
+#### Get All Jobs
+```http
+GET /jobs
+Response: { "jobs": [...] }
+```
+
+#### Get Single Job
+```http
+GET /jobs/:jobId
+Response: { "job": {...} }
+```
+
+### **Application Management**
+
+#### Submit Application
+```http
+POST /jobs/:jobId/apply
+Content-Type: multipart/form-data
+
+name=John&email=john@example.com&resume=<file>&coverLetter=...
+
+Response: { "score": 85, "candidateId": "uuid" }
+```
+
+#### Get Candidates for Job
+```http
+GET /jobs/:jobId/applications
+Response: { "candidates": [...], "metrics": {...} }
+```
+
+### **Interview Management**
+
+#### Send Interview Invite
+```http
+POST /jobs/:jobId/applications/:candidateId/invite
+Content-Type: application/json
+
+{
+  "interviewDate": "2025-01-15T10:00:00Z",
+  "method": "email"
+}
+
+Response: { "status": "invite_sent" }
+```
+
+#### Submit Interview Response
+```http
+POST /jobs/:jobId/applications/:candidateId/submit-interview
+Content-Type: application/json
+
+{
+  "responses": [
+    { "question": "...", "answer": "..." },
+    { "question": "...", "answer": "..." }
+  ],
+  "codingSubmission": { "code": "...", "language": "javascript" }
+}
+
+Response: { "score": 88, "feedback": "..." }
 ```
 
 ---
 
-## 📦 Project Structure
+## 🤖 AI Features
 
-```
-youpac-ai/
-├── app/
-│   ├── components/
-│   │   ├── ui/                 # shadcn/ui components
-│   │   ├── canvas/             # Canvas and node components
-│   │   ├── homepage/           # Landing page sections
-│   │   ├── dashboard/          # Dashboard layout
-│   │   └── preview/            # YouTube/Twitter previews
-│   ├── routes/
-│   │   ├── dashboard/          # Protected routes
-│   │   ├── canvas/             # Canvas editor
-│   │   ├── share/              # Shared canvas view
-│   │   └── auth/               # Authentication pages
-│   ├── lib/
-│   │   ├── api/                # API helpers
-│   │   ├── utils/              # Utility functions
-│   │   └── hooks/              # React hooks
-│   └── styles/                 # Global styles
-├── convex/
-│   ├── schema.ts               # Database schema
-│   ├── videos.ts               # Video operations
-│   ├── projects.ts             # Project management
-│   ├── agents.ts               # AI agent functions
-│   ├── aiHackathon.ts          # AI generation
-│   └── http.ts                 # HTTP endpoints
-├── public/                     # Static assets
-├── docs/                       # Documentation
-├── package.json
-├── tsconfig.json
-├── tailwind.config.ts
-├── vite.config.ts
-└── react-router.config.ts
-```
+### **Resume Evaluation**
+- **Automatic Parsing**: Extracts text from PDF resumes
+- **Skill Extraction**: Identifies technical and soft skills
+- **Job Matching**: Compares candidate skills with job requirements
+- **Scoring**: Generates 0-100 score based on relevance
 
----
+### **Interview Generation**
+- **Dynamic Questions**: AI generates 5-7 behavioral/technical questions
+- **Context-Aware**: Questions tailored to job requirements
+- **Progressive Difficulty**: Questions increase in complexity
+- **Real-time Feedback**: Immediate AI scoring of responses
 
-## 🚢 Deployment
+### **Coding Assessment**
+- **Challenge Generation**: AI creates programming problems
+- **Code Evaluation**: Analyzes solution correctness, efficiency, code quality
+- **Language Support**: JavaScript, Python, Java, C++, etc.
+- **Detailed Feedback**: Suggestions for improvement
 
-### Vercel (Recommended)
-
-1. **Push your code to GitHub**
-2. **Connect your repository to Vercel**
-3. **Add environment variables in Vercel dashboard**
-4. **Deploy automatically on push**
-
-The `react-router.config.ts` includes the Vercel preset for seamless deployment.
-
-### Docker Deployment
-
-```bash
-# Build the Docker image
-docker build -t youpac-ai .
-
-# Run the container
-docker run -p 3000:3000 youpac-ai
-```
-
-Deploy to any Docker-compatible platform:
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### Output Structure
-
-```
-build/
-├── client/    # Static assets & client bundle
-└── server/    # Server-side code & API routes
-```
-
----
-
-## 📚 Documentation
-
-### How It Works
-
-#### 1️⃣ Upload Your Video
-- Upload any video file (up to 1GB)
-- Automatic transcription using ElevenLabs
-- Extract metadata (duration, resolution, format)
-
-#### 2️⃣ Generate Content
-- AI agents analyze your video and transcription
-- Generate optimized titles, descriptions, thumbnails
-- Each agent can be regenerated individually
-
-#### 3️⃣ Refine with Chat
-- Use @mentions to chat with specific agents
-- Request changes or regenerate content
-- AI understands context from your video
-
-#### 4️⃣ Preview & Export
-- Preview on YouTube and Twitter/X
-- Copy content to clipboard
-- Export as markdown files
-- Share canvas with collaborators
-
-### API Endpoints
-
-All API endpoints are handled through Convex functions. Key operations:
-
-- **Video Upload** - Handle file upload and processing
-- **Generate Content** - Trigger AI agent content generation
-- **Canvas Operations** - CRUD for canvas and nodes
-- **Share Management** - Create and manage share tokens
-- **Chat** - Real-time messaging with AI agents
+### **Hiring Recommendation**
+- **Multi-Factor Analysis**: Combines resume, interview, and coding scores
+- **Decision Support**: Provides recommendations (Strong Accept/Accept/Hold/Reject)
+- **Reasoning**: Explains the decision based on collected data
+- **Calendar Integration**: Links to HR scheduling tools
 
 ---
 
 ## 🔐 Environment Variables
 
-### Required
-
 ```env
-# Clerk
-VITE_CLERK_PUBLISHABLE_KEY=pk_test_...
-CLERK_SECRET_KEY=sk_test_...
+# Google Gemini API
+GEMINI_API_KEY=your_gemini_api_key_here
 
-# Convex
-VITE_CONVEX_URL=https://...
-CONVEX_DEPLOYMENT=...
+# Email Configuration (Gmail)
+EMAIL_USER=your_gmail@gmail.com
+EMAIL_PASS=your_app_password_here
 
-# Frontend
-FRONTEND_URL=http://localhost:5173
+# Database
+MONGO_URI=mongodb://username:password@localhost:27017/recruiter_db
+
+# Server Configuration (Optional)
+NODE_PORT=5000
+PYTHON_PORT=5000
+FRONTEND_PORT=8080
 ```
 
-### Convex Dashboard (Server-side)
+### How to Get These Credentials
 
-```env
-OPENAI_API_KEY=sk-...
-ELEVENLABS_API_KEY=...
-```
+**Google Gemini API Key**:
+1. Go to https://ai.google.dev/
+2. Click "Get started" → "Get API key in Google Cloud Console"
+3. Create a new project, enable Gemini API
+4. Copy your API key
+
+**Gmail App Password**:
+1. Enable 2-Factor Authentication on your Google Account
+2. Go to myaccount.google.com → Security
+3. Find "App passwords" and generate one
+4. Use this password (not your regular password)
+
+**MongoDB Connection**:
+- Local: `mongodb://localhost:27017/recruiter_db`
+- Atlas Cloud: `mongodb+srv://username:password@cluster.mongodb.net/recruiter_db`
 
 ---
 
-## 🎯 Key Routes
+## 🚀 Features Showcase
 
-| Route | Purpose |
-|-------|---------|
-| `/` | Homepage with features overview |
-| `/sign-in` | User authentication |
-| `/sign-up` | User registration |
-| `/dashboard` | Projects dashboard |
-| `/dashboard/settings` | Profile configuration |
-| `/canvas/:projectId` | Interactive content canvas |
-| `/share/:shareId` | Read-only shared canvas |
+### 📊 HR Dashboard
+- **Job Analytics**: Overview of all active job postings
+- **Candidate Metrics**: Application count, average scores
+- **Pipeline Visualization**: See candidates at each stage
+- **Quick Actions**: Create jobs, send invites, view candidates
+- **Search & Filter**: Find candidates by skills, scores, or status
+
+### 🎤 Interview Module
+- **Multi-Stage Assessment**:
+  - ✅ Resume Review
+  - ✅ AI Q&A Interview
+  - ✅ Coding Challenge
+  - ✅ Final Evaluation
+- **Live Code Editor**: Syntax highlighting, multiple languages
+- **Real-time Scoring**: Instant feedback on submissions
+- **Interview Recording**: Store responses for HR review
+
+### 💼 Candidate Experience
+- **Simple Application**: Intuitive form with resume upload
+- **Interview Preparation**: Clear instructions and guidelines
+- **Progress Tracking**: See application status at each stage
+- **Feedback**: Receive detailed evaluation results
 
 ---
 
-## 📝 npm Scripts
+## 📈 Performance Metrics
 
-```bash
-# Development
-npm run dev          # Start dev server with Convex
-
-# Building
-npm run build        # Build for production
-npm run start        # Start production server
-
-# Quality Assurance
-npm run typecheck    # Run TypeScript checks
-npm run lint         # Run ESLint
-npm run format       # Format code with Prettier
-
-# Convex
-npm run convex:deploy  # Deploy Convex functions
-```
+| Metric | Before HireFlow | With HireFlow |
+|--------|-----------------|---------------|
+| Time to Hire | 21-28 days | 3-5 days |
+| Resume Screening | 2-3 hours per job | <5 minutes |
+| Interview Scheduling | 1-2 days | Instant |
+| Evaluation Time | 1-2 weeks | Real-time |
+| Cost per Hire | $3,000-$5,000 | <$500 |
+| Candidate Quality | Manual bias | Data-driven |
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how to get involved:
+We welcome contributions! Please follow these steps:
 
-1. **Fork the repository**
-2. **Create your feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
 
-### Development Guidelines
-
-- Write clear, descriptive commit messages
-- Follow the existing code style
-- Add tests for new features
-- Update documentation as needed
-- Ensure TypeScript types are correct
+### Code Style
+- Use **TypeScript** for type safety
+- Follow **ESLint** rules
+- Write meaningful commit messages
+- Add comments for complex logic
+- Test before submitting PR
 
 ---
 
-## 🗺️ Roadmap
+## 🐛 Troubleshooting
 
-- [ ] YouTube URL import support
-- [ ] Batch export functionality
-- [ ] Team collaboration features
-- [ ] Analytics integration & dashboard
-- [ ] Support for more social media platforms (TikTok, Instagram)
-- [ ] Custom AI prompt templates
-- [ ] Video trimming and editing tools
-- [ ] Advanced thumbnail editor
-- [ ] API for third-party integrations
-- [ ] Mobile app support
+### MongoDB Connection Issues
+```bash
+# Check if MongoDB is running
+mongosh
+
+# If not installed, use MongoDB Atlas (cloud)
+# Update MONGO_URI in .env
+```
+
+### Gemini API Errors
+```
+Error: GEMINI_API_KEY not found
+→ Make sure API key is added to .env file
+→ Verify key is active in Google Cloud Console
+```
+
+### Email Not Sending
+```
+Error: Failed to send email
+→ Enable 2FA on Google Account
+→ Use App Password (not regular password)
+→ Check if Gmail SMTP is enabled
+```
+
+### Port Already in Use
+```bash
+# Kill process on port 5000
+lsof -ti:5000 | xargs kill -9
+
+# Or use different port
+NODE_PORT=5001 npm start
+```
 
 ---
 
-## 📄 License
+## 📝 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 💬 Support & Community
-
-- 📧 **Email**: support@youpac-ai.com
-- 💬 **Discord**: [Join our community](https://discord.gg/youpac-ai)
-- 🐙 **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/youpac-ai/issues)
-- 📖 **Documentation**: [Read the full docs](https://docs.youpac-ai.com)
+This project is licensed under the **MIT License** - see the LICENSE file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## 👥 Team & Attribution
 
-- [React Router](https://reactrouter.com) - Modern full-stack framework
-- [Convex](https://www.convex.dev) - Real-time database
-- [OpenAI](https://openai.com) - AI models
-- [ElevenLabs](https://elevenlabs.io) - Speech technology
-- [Vercel](https://vercel.com) - Deployment platform
-- All open-source contributors
+**Created by**: Gupta-02  
+**Inspired by**: Modern recruitment industry challenges  
+**Built with**: Open-source technologies and community support
+
+---
+
+## 📞 Support & Contact
+
+- 📧 **Email**: support@hireflow.io
+- 💬 **Discord**: [Join Community](https://discord.gg/hireflow)
+- 🐙 **GitHub Issues**: [Report Bugs](https://github.com/Gupta-02/hireflow/issues)
+- 📖 **Documentation**: [Full Docs](https://docs.hireflow.io)
+
+---
+
+## 🎯 Roadmap (Future Enhancements)
+
+- 🎙️ **Voice Interview**: Real-time voice Q&A with AI
+- 📹 **Video Recording**: Video interview capabilities
+- 🔗 **ATS Integration**: Connect with existing ATS systems
+- 📊 **Analytics Dashboard**: Advanced reporting and insights
+- 🌐 **Multi-Language**: Support for 20+ languages
+- 🤖 **Advanced ML Models**: Predictive hiring analytics
+- ⚡ **WebSocket**: Real-time notifications
+- 🔐 **2FA & SSO**: Enhanced security features
+- 📱 **Mobile App**: Native iOS/Android applications
+
+---
+
+## ⭐ Show Your Support
+
+If you find HireFlow useful, please consider:
+- ⭐ Starring the repository
+- 🔀 Sharing with your network
+- 💬 Providing feedback and suggestions
+- 🤝 Contributing to the project
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by the YouPac AI Team**
+### Built with ❤️ by Gupta-02
 
-[⭐ Star us on GitHub](https://github.com/yourusername/youpac-ai) • [🐦 Follow on Twitter](https://twitter.com/youpac_ai)
+**Transform Your Hiring Process Today!**
+
+[🌐 Website](https://hireflow.io) • [📖 Docs](https://docs.hireflow.io) • [💼 LinkedIn](https://linkedin.com) • [🐙 GitHub](https://github.com/Gupta-02/hireflow)
 
 </div>
