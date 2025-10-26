@@ -20,6 +20,14 @@ The platform leverages **Google Gemini AI** to intelligently evaluate resumes, g
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
+## Video 
+
+
+
+
+https://github.com/user-attachments/assets/3f0ae61d-ce92-43e5-95d0-b4b049f2e0f0
+
+
 ## ✨ Key Features
 
 🎯 **AI-Powered Candidate Scoring** - Automatic resume evaluation and candidate ranking  
