@@ -8,7 +8,7 @@
 [![AI Powered](https://img.shields.io/badge/AI-Google%20Gemini-orange?logo=google)](https://ai.google.dev/)
 [![Database](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 📋 Abstract
 
@@ -18,7 +18,7 @@ The platform leverages **Google Gemini AI** to intelligently evaluate resumes, g
 
 **Key Innovation**: An intelligent pipeline that automatically scores candidates, conducts AI-powered Q&A interviews, evaluates coding submissions, and provides actionable hiring recommendations—all without manual intervention.
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## ✨ Key Features
 
@@ -31,7 +31,7 @@ The platform leverages **Google Gemini AI** to intelligently evaluate resumes, g
 ⚡ **Real-time Updates** - WebSocket-ready architecture for live notifications  
 🎨 **Modern UI** - Responsive design with Shadcn UI components  
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🏗️ System Architecture
 
@@ -245,7 +245,7 @@ STAGE 6: FINAL DECISION
 <img width="660" height="585" alt="image" src="https://github.com/user-attachments/assets/249cf245-39bb-47eb-82ed-c29df677bfb2" />
 
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 📁 Project Structure
 
@@ -291,7 +291,7 @@ hireflow/
 └── 📄 hacktoday.code-workspace     # VS Code workspace
 ```
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🛠️ Technology Stack
 
@@ -390,7 +390,7 @@ npm run dev
 - 💼 **Job Application**: http://localhost:8080/apply/:jobId
 - 🎤 **Interview Module**: http://localhost:8080/interview/:candidateId/:jobId
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 📚 API Documentation
 
@@ -475,7 +475,7 @@ Content-Type: application/json
 Response: { "score": 88, "feedback": "..." }
 ```
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🤖 AI Features
 
@@ -503,7 +503,7 @@ Response: { "score": 88, "feedback": "..." }
 - **Reasoning**: Explains the decision based on collected data
 - **Calendar Integration**: Links to HR scheduling tools
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🔐 Environment Variables
 
@@ -541,7 +541,7 @@ FRONTEND_PORT=8080
 **MongoDB Connection**:
 
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🚀 Features Showcase
 
@@ -568,7 +568,8 @@ FRONTEND_PORT=8080
 - **Progress Tracking**: See application status at each stage
 - **Feedback**: Receive detailed evaluation results
 
----
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 📈 Performance Metrics
 
@@ -581,7 +582,7 @@ FRONTEND_PORT=8080
 | Cost per Hire | $3,000-$5,000 | <$500 |
 | Candidate Quality | Manual bias | Data-driven |
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🤝 Contributing
 
@@ -600,7 +601,7 @@ We welcome contributions! Please follow these steps:
 - Add comments for complex logic
 - Test before submitting PR
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🐛 Troubleshooting
 
@@ -660,7 +661,8 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 - 🐙 **GitHub Issues**: [Report Bugs](https://github.com/Gupta-02/hireflow/issues)
 - 📖 **Documentation**: [Full Docs](https://docs.hireflow.io)
 
----
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## 🎯 Roadmap (Future Enhancements)
 
@@ -674,7 +676,7 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 - 🔐 **2FA & SSO**: Enhanced security features
 - 📱 **Mobile App**: Native iOS/Android applications
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 ## ⭐ Show Your Support
 
@@ -684,11 +686,9 @@ If you find HireFlow useful, please consider:
 - 💬 Providing feedback and suggestions
 - 🤝 Contributing to the project
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 <div align="center">
-
-### Built with ❤️ by Gupta-02
 
 **Transform Your Hiring Process Today!**
 
